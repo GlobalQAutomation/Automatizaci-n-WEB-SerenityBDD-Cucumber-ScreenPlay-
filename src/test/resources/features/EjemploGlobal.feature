@@ -15,9 +15,11 @@ Característica: Realizar compras de artículos
   Esquema del escenario: Agregar artículos al carrito de compras
     Dado que un nuevo cliente accede hasta la web de compras
     Cuando el agrega productos al carro
-      | <nombreProducto> | <cantidadAgregar> |
+      | <cantidadAgregar> | <nombreProducto> | <tipoCategoria> |
     Entonces el ve los productos listado en el carro de compras
 
     Ejemplos:
-      | cantidadAgregar | nombreProducto | tipoCategoria   |
-      | 100             | Tapabocas N95  | Belleza y salud |
+      | cantidadAgregar | nombreProducto                         | tipoCategoria   |
+      | 3               | Máscara de respirador N95              | Belleza y salud |
+      | 4               | Gel desinfectante de manos de 50ml 75% | Belleza y salud |
+      | 5               | Máscara de Gas facial 4 estilo 6800    | Belleza y salud |

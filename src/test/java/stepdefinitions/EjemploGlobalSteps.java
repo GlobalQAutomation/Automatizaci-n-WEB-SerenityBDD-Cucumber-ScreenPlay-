@@ -14,6 +14,11 @@ import userinterfaces.HomePage;
 
 import java.util.List;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
+import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
+import static userinterfaces.CarroCompras.LNK_ARTICULO_AGREGADO;
+
 public class EjemploGlobalSteps {
 
     @Managed(driver = "chrome")
@@ -36,13 +41,17 @@ public class EjemploGlobalSteps {
         );
     }
 
-    @Entonces("^el ve los productos listado en el carro de compras$")
-    public void elVeLosProductosListadoEnElCarroDeCompras() {
-
-    }
-
     @Cuando("^el agrega productos al carro$")
     public void elAgregaProductosAlCarro(List<String> datos) {
-
+        actor.wasAbleTo(
+                BuscarProducto.conDescripcion(datos.get(1), datos.get(2)),
+                AgregarProducto.cantidad(datos.get(0))
+        );
     }
+
+    @Entonces("^el ve los productos listado en el carro de compras$")
+    public void elVeLosProductosListadoEnElCarroDeCompras() {
+        actor.should(seeThat(the(LNK_ARTICULO_AGREGADO), isPresent()));
+    }
+
 }
