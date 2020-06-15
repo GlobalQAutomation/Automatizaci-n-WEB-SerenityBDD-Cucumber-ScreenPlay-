@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-06-2020 21:24</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-06-2020 09:19</span>
     <br style="clear:left"/>
 </div>
 
@@ -185,7 +185,7 @@ Para realizar una compra de un artículo
                         <td valign="top" align="right">
                             <p class="tag">
                                 <span class="badge tag-badge" style="background:default;"
-                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="cd3cc7523b930b9aaf98fafd5e0a3ec92f55cb8edbc8afa04591e744d3c26ce3.html">Escenario Con Ejemplos
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="324224a757a09ac095a73ea6c35a13cbcd6d1ccb7dfe4ae598d20110ca3153b7.html">Escenario Sin Ejemplos
                                     (tag)</a>
                                 </span>
                             </p>
@@ -197,9 +197,9 @@ Para realizar una compra de un artículo
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Agregar art&iacute;culos al carrito de compras
+                                <span class="failing-color">Agregar art&iacute;culos al carrito de compras
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -213,116 +213,148 @@ Para realizar una compra de un artículo
 
     <div class="clr"></div>
 
-    <div class="story-title">
-        <h3>Scenario:</h3>
-        <div class="scenario">Dado que un nuevo cliente accede hasta la web de compras<br>Cuando el agrega productos al carro<br><table class='embedded'><tbody><tr><td>&lt;cantidadAgregar&gt;</td><td>&lt;nombreProducto&gt;</td><td>&lt;tipoCategoria&gt;</td></tr></tbody></table><br>Entonces el ve los productos listado en el carro de compras</div>
-    </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.example.tasks.BuscarProducto.performAs(BuscarProducto.java:34)<br />co.com.example.stepdefinitions.EjemploGlobalSteps.elAgregaProductosAlCarro(EjemploGlobalSteps.java:46)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //a[starts-with(@title,'Gel desinfectante de manos de 50ml 75%')] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.example.tasks.BuscarProducto.performAs(BuscarProducto.java :34)<br />co.com.example.stepdefinitions.EjemploGlobalSteps.elAgregaProductosAlCarro(EjemploGlobalSteps.java :46)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource11639590253232711689.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="2057956f26f6b96c060a338d0c5d9ce42e4fc608a9aee9dd1cebfa02ff355ffd.png" title=" Example: {cantidadAgregar=3, nombreProducto=M&aacute;scara de respirador N95, tipoCategoria=Belleza y salud}" width="1034"/>
-                <img src="2057956f26f6b96c060a338d0c5d9ce42e4fc608a9aee9dd1cebfa02ff355ffd.png" title=" Dado que un nuevo cliente accede hasta la web de compras" width="1034"/>
-                <img src="2057956f26f6b96c060a338d0c5d9ce42e4fc608a9aee9dd1cebfa02ff355ffd.png" title=" Global opens the Home page" width="1034"/>
-                <img src="522a6d225ba391b8c62a27ea55236adaab0594a0324bffc0054ab381cabf4011.png" title=" Dado que un nuevo cliente accede hasta la web de compras (completed)" width="1366"/>
-                <img src="522a6d225ba391b8c62a27ea55236adaab0594a0324bffc0054ab381cabf4011.png" title=" Cuando el agrega productos al carro
+                <img src="f1e5904dc2fa05e23b41437a011d2069d72e7b1cc44c5d66d6c4673af85e2506.png" title=" Dado que un nuevo cliente Arturo accede hasta la web de compras" width="1034"/>
+                <img src="f1e5904dc2fa05e23b41437a011d2069d72e7b1cc44c5d66d6c4673af85e2506.png" title=" Arturo opens the Home page" width="1034"/>
+                <img src="30b40eb636a50e16d529b0310f9a7c286f05c14cf13d1066bda2020cfa81a68a.png" title=" Dado que un nuevo cliente Arturo accede hasta la web de compras (completed)" width="1366"/>
+                <img src="25b7bf3c380939d39562f93e7039635180abc18260ba1553dd94a853ef12a64c.png" title=" Cuando el agrega 3 unidades de M&aacute;scara de respirador N95 de Belleza y salud al carro" width="1366"/>
+                <img src="25b7bf3c380939d39562f93e7039635180abc18260ba1553dd94a853ef12a64c.png" title=" Arturo buscar producto" width="1366"/>
+                <img src="25b7bf3c380939d39562f93e7039635180abc18260ba1553dd94a853ef12a64c.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
+                <img src="1de8f5e0e59d8e94e78c31fcfa63e0cbc9f30d2c1d1c80d15d892c364ed17de9.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
+                <img src="e34bed47c01ae185f30d590cdf3bf8ea63582b679eeed8d6fdb280168d7249c0.png" title=" Arturo enters 'M&aacute;scara de respirador N95' into Input donde se realizar la b&uacute;squeda" width="1366"/>
+                <img src="449e653e5d007e3d909d0265d6828e2e1f8f291cf905a3ddf2bdfcc6e7f399ec.png" title=" Arturo enters 'M&aacute;scara de respirador N95' into Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
+                <img src="449e653e5d007e3d909d0265d6828e2e1f8f291cf905a3ddf2bdfcc6e7f399ec.png" title=" Arturo types 'ENTER' in Input donde se realizar la b&uacute;squeda" width="1366"/>
+                <img src="599e30add82bdb2696804c0ae02e22ff653ee2df3bbc09c00dc8a3606d80964e.png" title=" Arturo types 'ENTER' in Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
+                <img src="032d47315235210c7f06c327597a4abdeacb51573ac5700bbba39e203c4558e4.png" title=" Arturo clicks on Link objeto encontrado" width="1366"/>
+                <img src="0c17741d3681d487dbfca8f00aa7390f3f74a30a1d9ad5e947513fdc04f41d78.png" title=" Arturo clicks on Link objeto encontrado (completed)" width="1366"/>
+                <img src="b527cb497a7b724e792ee09268f805a3a27e5942edf3197824df016257570dbe.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
+                <img src="13bcde7aed254963a9d804ceb937db1a833c3598d81f1ee91d433005f9c7f924.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
+                <img src="13bcde7aed254963a9d804ceb937db1a833c3598d81f1ee91d433005f9c7f924.png" title=" Arturo buscar producto (completed)" width="1366"/>
+                <img src="13bcde7aed254963a9d804ceb937db1a833c3598d81f1ee91d433005f9c7f924.png" title=" Arturo agregar producto" width="1366"/>
+                <img src="13bcde7aed254963a9d804ceb937db1a833c3598d81f1ee91d433005f9c7f924.png" title=" Arturo clicks on Caracter&iacute;stica del art&iacute;culo" width="1366"/>
+                <img src="0fccb8e447e01b88aae490c70436b0d81baad1142787e130ebd0a378a9d26e74.png" title=" Arturo clicks on Caracter&iacute;stica del art&iacute;culo (completed)" width="1366"/>
+                <img src="0fccb8e447e01b88aae490c70436b0d81baad1142787e130ebd0a378a9d26e74.png" title=" Arturo clicks on Bot&oacute;n a&ntilde;adir a la cesta" width="1366"/>
+                <img src="8683991b452429d148bda8a9e388c5b3144b37e7c3075c1acf18bd78f39ea68f.png" title=" Arturo clicks on Bot&oacute;n a&ntilde;adir a la cesta (completed)" width="1366"/>
+                <img src="8683991b452429d148bda8a9e388c5b3144b37e7c3075c1acf18bd78f39ea68f.png" title=" Arturo clicks on Bot&oacute;n ver la cesta" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Arturo clicks on Bot&oacute;n ver la cesta (completed)" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Arturo agregar producto (completed)" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Cuando el agrega 3 unidades de M&aacute;scara de respirador N95 de Belleza y salud al carro (completed)" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Entonces el ve los productos listado en el carro de compras" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Then Articulo agregado al carrito should be an element that is present" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Entonces el ve los productos listado en el carro de compras (completed)" width="1366"/>
+                <img src="8d8900a2b2d4e4b6658c70468532406bf2b8c0f3820a352f4b7e57d044222989.png" title=" Example: null" width="1034"/>
+                <img src="8d8900a2b2d4e4b6658c70468532406bf2b8c0f3820a352f4b7e57d044222989.png" title=" Dado que un nuevo cliente Arturo accede hasta la web de compras" width="1034"/>
+                <img src="8d8900a2b2d4e4b6658c70468532406bf2b8c0f3820a352f4b7e57d044222989.png" title=" Arturo opens the Home page" width="1034"/>
+                <img src="fa357e21ea9f3dc56fe0de693797377c3aa6b6327acd94ea17c94ba93b81050b.png" title=" Dado que un nuevo cliente Arturo accede hasta la web de compras (completed)" width="1366"/>
+                <img src="fa357e21ea9f3dc56fe0de693797377c3aa6b6327acd94ea17c94ba93b81050b.png" title=" Cuando el agrega productos al carro
 | 3 | M&aacute;scara de respirador N95 | Belleza y salud |" width="1366"/>
-                <img src="522a6d225ba391b8c62a27ea55236adaab0594a0324bffc0054ab381cabf4011.png" title=" Global buscar producto" width="1366"/>
-                <img src="74df4fe35574d91d7346c20bbe3964e35fc8e149b68a2fa875b5a1b3b0c8ba6b.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
-                <img src="fef3188284ceb2a7ddc267d37345894a04401394771ad2476691c008ec65309c.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
-                <img src="311c5c2278e1aa65b00c3b7b350bf8d45dd30f39adb1aeb6ead8fab087869f5f.png" title=" Global enters 'M&aacute;scara de respirador N95' into Input donde se realizar la b&uacute;squeda" width="1366"/>
-                <img src="4a82f8682296a812c419d4d23818418cf8d8d75e1bfb1a5646528bd7a62ecac4.png" title=" Global enters 'M&aacute;scara de respirador N95' into Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
-                <img src="4a82f8682296a812c419d4d23818418cf8d8d75e1bfb1a5646528bd7a62ecac4.png" title=" Global types 'ENTER' in Input donde se realizar la b&uacute;squeda" width="1366"/>
-                <img src="98f152298b183faca58318d09c0bed06399db5d358e26d3488a5e7817559e16f.png" title=" Global types 'ENTER' in Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
-                <img src="3bb8a37df3c970656ad61619ba8e99943358e459d2b91d95e004d5d1213b3619.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
-                <img src="4848d5e8973decf2839c63285bd62dbef07f9a4f514f4f7a17e82fbd587ca1d7.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
-                <img src="4848d5e8973decf2839c63285bd62dbef07f9a4f514f4f7a17e82fbd587ca1d7.png" title=" Global clicks on Link objeto encontrado" width="1366"/>
-                <img src="fc62960d8d0b41b6f12a268ba368b27cbdc6ccd3e99d581e1d9061e235696a66.png" title=" Global clicks on Link objeto encontrado (completed)" width="1366"/>
-                <img src="4c49a52a5d54484b1ffc389a90e47970c5e3e6f286402167f062afb43dc05904.png" title=" Global buscar producto (completed)" width="1366"/>
-                <img src="4c49a52a5d54484b1ffc389a90e47970c5e3e6f286402167f062afb43dc05904.png" title=" Global agregar producto" width="1366"/>
-                <img src="4c49a52a5d54484b1ffc389a90e47970c5e3e6f286402167f062afb43dc05904.png" title=" Global clicks on Caracter&iacute;stica del art&iacute;culo" width="1366"/>
-                <img src="3a8c2e0bf9e257c463e75001afb21aae333deeb543537d0bc277fa9b0e7d153c.png" title=" Global clicks on Caracter&iacute;stica del art&iacute;culo (completed)" width="1366"/>
-                <img src="3a8c2e0bf9e257c463e75001afb21aae333deeb543537d0bc277fa9b0e7d153c.png" title=" Global clicks on Bot&oacute;n a&ntilde;adir a la cesta" width="1366"/>
-                <img src="fe994e95ef444acc023e272542850e2ce08b4a502151003716cc14d2ff81d516.png" title=" Global clicks on Bot&oacute;n a&ntilde;adir a la cesta (completed)" width="1366"/>
-                <img src="fe994e95ef444acc023e272542850e2ce08b4a502151003716cc14d2ff81d516.png" title=" Global clicks on Bot&oacute;n ver la cesta" width="1366"/>
-                <img src="5c11a593520975bbc2068a82b0fd15585e98b63f0c08ca52d0b95c27b081c237.png" title=" Global clicks on Bot&oacute;n ver la cesta (completed)" width="1366"/>
-                <img src="5c11a593520975bbc2068a82b0fd15585e98b63f0c08ca52d0b95c27b081c237.png" title=" Global agregar producto (completed)" width="1366"/>
-                <img src="5c11a593520975bbc2068a82b0fd15585e98b63f0c08ca52d0b95c27b081c237.png" title=" Cuando el agrega productos al carro
+                <img src="fa357e21ea9f3dc56fe0de693797377c3aa6b6327acd94ea17c94ba93b81050b.png" title=" Arturo buscar producto" width="1366"/>
+                <img src="e92df2237e1bc40d56ca14b78f683ff51377264c5699419cdc77bc4e3b461108.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
+                <img src="3c88af3c2d89385fc49f7f7c6e2dba19c52f0363c029a220bc8e7bfa2b104142.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
+                <img src="b843bed8c81db0f9e8ba99b03bd7b55b18e776ca4e88db7d27f842807b377eff.png" title=" Arturo enters 'M&aacute;scara de respirador N95' into Input donde se realizar la b&uacute;squeda" width="1366"/>
+                <img src="f15b01b7645deb6915bbc29a70a4bb99423345989112d544c8e707ac4ab83968.png" title=" Arturo enters 'M&aacute;scara de respirador N95' into Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
+                <img src="f15b01b7645deb6915bbc29a70a4bb99423345989112d544c8e707ac4ab83968.png" title=" Arturo types 'ENTER' in Input donde se realizar la b&uacute;squeda" width="1366"/>
+                <img src="57b36d2a25ed462d8dc091c792db041feb61932305cef775e9160388b09b6563.png" title=" Arturo types 'ENTER' in Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
+                <img src="6b8ee3c1c03fabc8412f6bef4711230101dff9ae090a66ff166757f811ee8fba.png" title=" Arturo clicks on Link objeto encontrado" width="1366"/>
+                <img src="d06152c80b67c97b76a7c0662a307d29a82851c8608b8147ce7fe596996d2bc7.png" title=" Arturo clicks on Link objeto encontrado (completed)" width="1366"/>
+                <img src="0c3691575f11ee5ed23e240008f6baf45fd21910ad78403a02748314ffc86743.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
+                <img src="b716bfd4954406d387dd95df7976694f440ec6c25abe7382a84d2bfe32064c01.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
+                <img src="b716bfd4954406d387dd95df7976694f440ec6c25abe7382a84d2bfe32064c01.png" title=" Arturo buscar producto (completed)" width="1366"/>
+                <img src="b716bfd4954406d387dd95df7976694f440ec6c25abe7382a84d2bfe32064c01.png" title=" Arturo agregar producto" width="1366"/>
+                <img src="b716bfd4954406d387dd95df7976694f440ec6c25abe7382a84d2bfe32064c01.png" title=" Arturo clicks on Caracter&iacute;stica del art&iacute;culo" width="1366"/>
+                <img src="95ae6bf27ff9493c75a218ab09d11fda604472581458c1c5844719f2d392c064.png" title=" Arturo clicks on Caracter&iacute;stica del art&iacute;culo (completed)" width="1366"/>
+                <img src="95ae6bf27ff9493c75a218ab09d11fda604472581458c1c5844719f2d392c064.png" title=" Arturo clicks on Bot&oacute;n a&ntilde;adir a la cesta" width="1366"/>
+                <img src="257690badb7fa0f3b312bb3c152101726d91e068d18b99ffbbdef83f705c5238.png" title=" Arturo clicks on Bot&oacute;n a&ntilde;adir a la cesta (completed)" width="1366"/>
+                <img src="257690badb7fa0f3b312bb3c152101726d91e068d18b99ffbbdef83f705c5238.png" title=" Arturo clicks on Bot&oacute;n ver la cesta" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Arturo clicks on Bot&oacute;n ver la cesta (completed)" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Arturo agregar producto (completed)" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Cuando el agrega productos al carro
 | 3 | M&aacute;scara de respirador N95 | Belleza y salud | (completed)" width="1366"/>
-                <img src="5c11a593520975bbc2068a82b0fd15585e98b63f0c08ca52d0b95c27b081c237.png" title=" Entonces el ve los productos listado en el carro de compras" width="1366"/>
-                <img src="5c11a593520975bbc2068a82b0fd15585e98b63f0c08ca52d0b95c27b081c237.png" title=" Then Articulo agregado al carrito should be an element that is present" width="1366"/>
-                <img src="5c11a593520975bbc2068a82b0fd15585e98b63f0c08ca52d0b95c27b081c237.png" title=" Then Articulo agregado al carrito should be an element that is present (completed)" width="1366"/>
-                <img src="5c11a593520975bbc2068a82b0fd15585e98b63f0c08ca52d0b95c27b081c237.png" title=" Entonces el ve los productos listado en el carro de compras (completed)" width="1366"/>
-                <img src="5c11a593520975bbc2068a82b0fd15585e98b63f0c08ca52d0b95c27b081c237.png" title=" Example: {cantidadAgregar=3, nombreProducto=M&aacute;scara de respirador N95, tipoCategoria=Belleza y salud} (completed)" width="1366"/>
-                <img src="3448f21ecbc997ab9c1aceafcbba88c47dfed9583ab84314e9e01d3978f90ed0.png" title=" Example: {cantidadAgregar=4, nombreProducto=Gel desinfectante de manos de 50ml 75%, tipoCategoria=Belleza y salud}" width="1034"/>
-                <img src="3448f21ecbc997ab9c1aceafcbba88c47dfed9583ab84314e9e01d3978f90ed0.png" title=" Dado que un nuevo cliente accede hasta la web de compras" width="1034"/>
-                <img src="3448f21ecbc997ab9c1aceafcbba88c47dfed9583ab84314e9e01d3978f90ed0.png" title=" Global opens the Home page" width="1034"/>
-                <img src="74db29e587cbdd3802e2698dfbe7c6dd871ffaaa5488df05d199de7b99bab454.png" title=" Dado que un nuevo cliente accede hasta la web de compras (completed)" width="1366"/>
-                <img src="74db29e587cbdd3802e2698dfbe7c6dd871ffaaa5488df05d199de7b99bab454.png" title=" Cuando el agrega productos al carro
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Entonces el ve los productos listado en el carro de compras" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Then Articulo agregado al carrito should be an element that is present" width="1366"/>
+                <img src="d246bfd5db3edfa685b483e49940242e0d21cec055b251a218b1ab4a34a2afeb.png" title=" Entonces el ve los productos listado en el carro de compras (completed)" width="1366"/>
+                <img src="d62c4f3b85d83fa1aa6620273fac7cfbf8754652f7af11e740f0e592b127f767.png" title=" Example: null" width="1034"/>
+                <img src="d62c4f3b85d83fa1aa6620273fac7cfbf8754652f7af11e740f0e592b127f767.png" title=" Dado que un nuevo cliente Arturo accede hasta la web de compras" width="1034"/>
+                <img src="d62c4f3b85d83fa1aa6620273fac7cfbf8754652f7af11e740f0e592b127f767.png" title=" Arturo opens the Home page" width="1034"/>
+                <img src="3b2f9c9fdc5cf363ddb8873c1d52b56a1788721fd5d1b29234149650c9242875.png" title=" Dado que un nuevo cliente Arturo accede hasta la web de compras (completed)" width="1366"/>
+                <img src="3b2f9c9fdc5cf363ddb8873c1d52b56a1788721fd5d1b29234149650c9242875.png" title=" Cuando el agrega productos al carro
 | 4 | Gel desinfectante de manos de 50ml 75% | Belleza y salud |" width="1366"/>
-                <img src="74db29e587cbdd3802e2698dfbe7c6dd871ffaaa5488df05d199de7b99bab454.png" title=" Global buscar producto" width="1366"/>
-                <img src="b9c63835f399ef87405cf8987edb14b496cd7609519d601cd42d4df1b6c38cb0.png" title=" Global enters 'Gel desinfectante de manos de 50ml 75%' into Input donde se realizar la b&uacute;squeda" width="1366"/>
-                <img src="7cd59c1a04c8598c290d4b39b87ecbbd9b1df8122c4d0f7bcc3e8cb64f09b12d.png" title=" Global enters 'Gel desinfectante de manos de 50ml 75%' into Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
-                <img src="7cd59c1a04c8598c290d4b39b87ecbbd9b1df8122c4d0f7bcc3e8cb64f09b12d.png" title=" Global types 'ENTER' in Input donde se realizar la b&uacute;squeda" width="1366"/>
-                <img src="3002064923f6f9fbad1be0da76487c027b204f0ebb7520691add03f08f7ec176.png" title=" Global types 'ENTER' in Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
-                <img src="430c38542ea5dfc1f5496f98c0537f68ee60c1c375de55787c51e935d0793f1c.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
-                <img src="1e50fcdd52c5bd2f8915fd4c534a2956b6006e0504fad741d5ed84584433dcc4.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
-                <img src="1e50fcdd52c5bd2f8915fd4c534a2956b6006e0504fad741d5ed84584433dcc4.png" title=" Global clicks on Link objeto encontrado" width="1366"/>
-                <img src="01453c6523c4cc72d05244f9b8860122bea79d6f9dd6d5d33ce2553082678054.png" title=" Global clicks on Link objeto encontrado (completed)" width="1366"/>
-                <img src="fd8faf78512d5930d1bd1f838c3c8854c70b60ea8e86c304e3553632f3d12fbe.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
-                <img src="1c6b87d8a9df8985a2a91653b13a860fc7a013d4cfa67342d087c5fbb50a3001.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
-                <img src="1c6b87d8a9df8985a2a91653b13a860fc7a013d4cfa67342d087c5fbb50a3001.png" title=" Global buscar producto (completed)" width="1366"/>
-                <img src="1c6b87d8a9df8985a2a91653b13a860fc7a013d4cfa67342d087c5fbb50a3001.png" title=" Global agregar producto" width="1366"/>
-                <img src="1c6b87d8a9df8985a2a91653b13a860fc7a013d4cfa67342d087c5fbb50a3001.png" title=" Global clicks on Env&iacute;o del art&iacute;culo" width="1366"/>
-                <img src="64c29c8a14e580f58615a8fbc70709cad04090c25046bfbefd2ee9b7f28a588e.png" title=" Global clicks on Env&iacute;o del art&iacute;culo (completed)" width="1366"/>
-                <img src="64c29c8a14e580f58615a8fbc70709cad04090c25046bfbefd2ee9b7f28a588e.png" title=" Global clicks on Caracter&iacute;stica del art&iacute;culo" width="1366"/>
-                <img src="94c75f3b33ffc295759689222166f2f13405ab880fc7b9ec5d06aa6d674a613c.png" title=" Global clicks on Caracter&iacute;stica del art&iacute;culo (completed)" width="1366"/>
-                <img src="94c75f3b33ffc295759689222166f2f13405ab880fc7b9ec5d06aa6d674a613c.png" title=" Global clicks on Bot&oacute;n a&ntilde;adir a la cesta" width="1366"/>
-                <img src="f5ec3790c16d6821a801c87a3474baa6f9b13853ffd5a4f73e6ef0814c2c0aba.png" title=" Global clicks on Bot&oacute;n a&ntilde;adir a la cesta (completed)" width="1366"/>
-                <img src="f5ec3790c16d6821a801c87a3474baa6f9b13853ffd5a4f73e6ef0814c2c0aba.png" title=" Global clicks on Bot&oacute;n ver la cesta" width="1366"/>
-                <img src="316cc9b6693ef365fe24f33c259e1bf6aa2b4b649c79c892605a57036f230e53.png" title=" Global clicks on Bot&oacute;n ver la cesta (completed)" width="1366"/>
-                <img src="316cc9b6693ef365fe24f33c259e1bf6aa2b4b649c79c892605a57036f230e53.png" title=" Global agregar producto (completed)" width="1366"/>
-                <img src="316cc9b6693ef365fe24f33c259e1bf6aa2b4b649c79c892605a57036f230e53.png" title=" Cuando el agrega productos al carro
-| 4 | Gel desinfectante de manos de 50ml 75% | Belleza y salud | (completed)" width="1366"/>
-                <img src="316cc9b6693ef365fe24f33c259e1bf6aa2b4b649c79c892605a57036f230e53.png" title=" Entonces el ve los productos listado en el carro de compras" width="1366"/>
-                <img src="316cc9b6693ef365fe24f33c259e1bf6aa2b4b649c79c892605a57036f230e53.png" title=" Then Articulo agregado al carrito should be an element that is present" width="1366"/>
-                <img src="316cc9b6693ef365fe24f33c259e1bf6aa2b4b649c79c892605a57036f230e53.png" title=" Then Articulo agregado al carrito should be an element that is present (completed)" width="1366"/>
-                <img src="316cc9b6693ef365fe24f33c259e1bf6aa2b4b649c79c892605a57036f230e53.png" title=" Entonces el ve los productos listado en el carro de compras (completed)" width="1366"/>
-                <img src="316cc9b6693ef365fe24f33c259e1bf6aa2b4b649c79c892605a57036f230e53.png" title=" Example: {cantidadAgregar=4, nombreProducto=Gel desinfectante de manos de 50ml 75%, tipoCategoria=Belleza y salud} (completed)" width="1366"/>
-                <img src="9641dcce53170a990701e0924127fe866ec1950cabe067a80c44c9b9b599ee22.png" title=" Example: {cantidadAgregar=5, nombreProducto=M&aacute;scara de Gas facial 4 estilo 6800, tipoCategoria=Belleza y salud}" width="1034"/>
-                <img src="9641dcce53170a990701e0924127fe866ec1950cabe067a80c44c9b9b599ee22.png" title=" Dado que un nuevo cliente accede hasta la web de compras" width="1034"/>
-                <img src="9641dcce53170a990701e0924127fe866ec1950cabe067a80c44c9b9b599ee22.png" title=" Global opens the Home page" width="1034"/>
-                <img src="a6b6025056d511d9401c27c2cb087ef2a0482100d409e343af3d48ee554a0b7b.png" title=" Dado que un nuevo cliente accede hasta la web de compras (completed)" width="1366"/>
-                <img src="a6b6025056d511d9401c27c2cb087ef2a0482100d409e343af3d48ee554a0b7b.png" title=" Cuando el agrega productos al carro
+                <img src="3b2f9c9fdc5cf363ddb8873c1d52b56a1788721fd5d1b29234149650c9242875.png" title=" Arturo buscar producto" width="1366"/>
+                <img src="3c69867cb901c11f4208a1c052db0c69f24c32ce9c6f194abafc2cf92c0ec2e8.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
+                <img src="2a4085e034d2da838237e32b7c131e8e739484eed6767d5ded9b52ee94bc5f28.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
+                <img src="cd997309005fdf754827c55f9bb46fc1bd7f52d055ed23d56055f786e51d9fbf.png" title=" Arturo enters 'Gel desinfectante de manos de 50ml 75%' into Input donde se realizar la b&uacute;squeda" width="1366"/>
+                <img src="26e1e219d5f3cd89aa9f1fef230b5b1f5df495093bfc51a3e5e1c3a4fdc53768.png" title=" Arturo enters 'Gel desinfectante de manos de 50ml 75%' into Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
+                <img src="26e1e219d5f3cd89aa9f1fef230b5b1f5df495093bfc51a3e5e1c3a4fdc53768.png" title=" Arturo types 'ENTER' in Input donde se realizar la b&uacute;squeda" width="1366"/>
+                <img src="4966058ebf942030cc4800ec7579bd5c78bfc94212489defbcf857a6abb0d0ec.png" title=" Arturo types 'ENTER' in Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
+                <img src="be50c159ad6d2ce62e453842824a6e24e1fa330b97efbdc2ff8a25fab02223f9.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
+                <img src="fb9454808d32c77f602a95309e0463968a8cbd0131a68bd1a74cd50c576f2d8c.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
+                <img src="fb9454808d32c77f602a95309e0463968a8cbd0131a68bd1a74cd50c576f2d8c.png" title=" Arturo clicks on Link objeto encontrado" width="1366"/>
+                <img src="fb9454808d32c77f602a95309e0463968a8cbd0131a68bd1a74cd50c576f2d8c.png" title=" Arturo clicks on Link objeto encontrado (completed)" width="1366"/>
+                <img src="20f7e988d7667c891d6b57376a731a840df18a2039b7224f413937c2d3998953.png" title=" Example: null" width="1034"/>
+                <img src="20f7e988d7667c891d6b57376a731a840df18a2039b7224f413937c2d3998953.png" title=" Dado que un nuevo cliente Arturo accede hasta la web de compras" width="1034"/>
+                <img src="20f7e988d7667c891d6b57376a731a840df18a2039b7224f413937c2d3998953.png" title=" Arturo opens the Home page" width="1034"/>
+                <img src="4f5a7fa99b30f91acd7058f0b35b42f1f605bbfb300578c028512dfe1362447d.png" title=" Dado que un nuevo cliente Arturo accede hasta la web de compras (completed)" width="1366"/>
+                <img src="4f5a7fa99b30f91acd7058f0b35b42f1f605bbfb300578c028512dfe1362447d.png" title=" Cuando el agrega productos al carro
 | 5 | M&aacute;scara de Gas facial 4 estilo 6800 | Belleza y salud |" width="1366"/>
-                <img src="a6b6025056d511d9401c27c2cb087ef2a0482100d409e343af3d48ee554a0b7b.png" title=" Global buscar producto" width="1366"/>
-                <img src="426f7b6cae37817acade8a276f981b8922cd2da2f23960ae9a423865b438beb2.png" title=" Global enters 'M&aacute;scara de Gas facial 4 estilo 6800' into Input donde se realizar la b&uacute;squeda" width="1366"/>
-                <img src="078068e6229b6146f0b426aac74624bfe3cc93c21e53eb6f837dcca9bfdcc43e.png" title=" Global enters 'M&aacute;scara de Gas facial 4 estilo 6800' into Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
-                <img src="078068e6229b6146f0b426aac74624bfe3cc93c21e53eb6f837dcca9bfdcc43e.png" title=" Global types 'ENTER' in Input donde se realizar la b&uacute;squeda" width="1366"/>
-                <img src="217e6a22ec940bb4bebe3ef9d4c77c8dd08ab02703b90c371c70678b355cab29.png" title=" Global types 'ENTER' in Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
-                <img src="18a588fb038d3bdfd83f432960cd68f30adf683d4dd326a9d9d5298921b2fd58.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
-                <img src="b16af41c3ebea0ec96afbbb34f935ea93a3e158cbd12be2c2bba600e98b9a946.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
-                <img src="b16af41c3ebea0ec96afbbb34f935ea93a3e158cbd12be2c2bba600e98b9a946.png" title=" Global clicks on Link objeto encontrado" width="1366"/>
-                <img src="a53ddbca5906efdac33e1b996014b41e4408dcdf977274de94c6dbb425bf3a42.png" title=" Global clicks on Link objeto encontrado (completed)" width="1366"/>
-                <img src="27be2abc4991276b52fbfac9c8326444ee888dd32795b8a0ecdf8c2ec8f58896.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
-                <img src="7f86ad706906c61daa7a0e3e4796ade409e7a8693aebb05dbfecbe8c0fac34f4.png" title=" Global clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
-                <img src="7f86ad706906c61daa7a0e3e4796ade409e7a8693aebb05dbfecbe8c0fac34f4.png" title=" Global buscar producto (completed)" width="1366"/>
-                <img src="7f86ad706906c61daa7a0e3e4796ade409e7a8693aebb05dbfecbe8c0fac34f4.png" title=" Global agregar producto" width="1366"/>
-                <img src="7f86ad706906c61daa7a0e3e4796ade409e7a8693aebb05dbfecbe8c0fac34f4.png" title=" Global clicks on Caracter&iacute;stica del art&iacute;culo" width="1366"/>
-                <img src="56ea00fb9bba0a40803c3164e02cb714aedaeb5409668498e3ddfcf405e1b510.png" title=" Global clicks on Caracter&iacute;stica del art&iacute;culo (completed)" width="1366"/>
-                <img src="56ea00fb9bba0a40803c3164e02cb714aedaeb5409668498e3ddfcf405e1b510.png" title=" Global clicks on Bot&oacute;n a&ntilde;adir a la cesta" width="1366"/>
-                <img src="ebbcd675a3949f651ab5faf819b7b419a2174ac33fe173124a0573da871cfdc9.png" title=" Global clicks on Bot&oacute;n a&ntilde;adir a la cesta (completed)" width="1366"/>
-                <img src="ebbcd675a3949f651ab5faf819b7b419a2174ac33fe173124a0573da871cfdc9.png" title=" Global clicks on Bot&oacute;n ver la cesta" width="1366"/>
-                <img src="2dc5ead81b3489f376a9ea8eaccfa74db1c61575d2426eb4e6c1a1121cd8ec97.png" title=" Global clicks on Bot&oacute;n ver la cesta (completed)" width="1366"/>
-                <img src="2dc5ead81b3489f376a9ea8eaccfa74db1c61575d2426eb4e6c1a1121cd8ec97.png" title=" Global agregar producto (completed)" width="1366"/>
-                <img src="2dc5ead81b3489f376a9ea8eaccfa74db1c61575d2426eb4e6c1a1121cd8ec97.png" title=" Cuando el agrega productos al carro
-| 5 | M&aacute;scara de Gas facial 4 estilo 6800 | Belleza y salud | (completed)" width="1366"/>
-                <img src="2dc5ead81b3489f376a9ea8eaccfa74db1c61575d2426eb4e6c1a1121cd8ec97.png" title=" Entonces el ve los productos listado en el carro de compras" width="1366"/>
-                <img src="2dc5ead81b3489f376a9ea8eaccfa74db1c61575d2426eb4e6c1a1121cd8ec97.png" title=" Then Articulo agregado al carrito should be an element that is present" width="1366"/>
-                <img src="2dc5ead81b3489f376a9ea8eaccfa74db1c61575d2426eb4e6c1a1121cd8ec97.png" title=" Then Articulo agregado al carrito should be an element that is present (completed)" width="1366"/>
-                <img src="2dc5ead81b3489f376a9ea8eaccfa74db1c61575d2426eb4e6c1a1121cd8ec97.png" title=" Entonces el ve los productos listado en el carro de compras (completed)" width="1366"/>
-                <img src="2dc5ead81b3489f376a9ea8eaccfa74db1c61575d2426eb4e6c1a1121cd8ec97.png" title=" Example: {cantidadAgregar=5, nombreProducto=M&aacute;scara de Gas facial 4 estilo 6800, tipoCategoria=Belleza y salud} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="4f5a7fa99b30f91acd7058f0b35b42f1f605bbfb300578c028512dfe1362447d.png" title=" Arturo buscar producto" width="1366"/>
+                <img src="ff0ed077a7e223ffa0c1f64fb2bb4fc7b4d0eafb0d652d65d53a08e514ac7f78.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente" width="1366"/>
+                <img src="7f71a235f3e3df19d527172fe0edb75e081cba81cba7017a05bae4053667b5eb.png" title=" Arturo clicks on Bot&oacute;n cerrar ventana emergente (completed)" width="1366"/>
+                <img src="dc5b227b3eb6c97b48aef2219aaf421957840362cedc000410007bb880c2f4ef.png" title=" Arturo enters 'M&aacute;scara de Gas facial 4 estilo 6800' into Input donde se realizar la b&uacute;squeda" width="1366"/>
+                <img src="7b355f9848277e8b9ab61aefecfd17d23044cd1dc4bb57dca2e1022eb06895b8.png" title=" Arturo enters 'M&aacute;scara de Gas facial 4 estilo 6800' into Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
+                <img src="7b355f9848277e8b9ab61aefecfd17d23044cd1dc4bb57dca2e1022eb06895b8.png" title=" Arturo types 'ENTER' in Input donde se realizar la b&uacute;squeda" width="1366"/>
+                <img src="4cd07aa8e053f5df82c7be92994e2d781c3931debf2e5c692dd496a651df4eb2.png" title=" Arturo types 'ENTER' in Input donde se realizar la b&uacute;squeda (completed)" width="1366"/>
+                <img src="9e4f46404266657e466c3e7472cf6d59cc2a9382100bb4cf563c30e1f932e39a.png" title=" Arturo clicks on Link objeto encontrado" width="1366"/>
+                <img src="9e4f46404266657e466c3e7472cf6d59cc2a9382100bb4cf563c30e1f932e39a.png" title=" Arturo clicks on Link objeto encontrado (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
