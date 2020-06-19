@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Realizar compras de artículos" skipped="0" tests="1" time="102.96" timestamp="2020-06-15 09:19:09"><testcase name="Agregar artículos al carrito de compras"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-co.com.example.tasks.BuscarProducto.performAs(BuscarProducto.java:34)&#13;
-co.com.example.stepdefinitions.EjemploGlobalSteps.elAgregaProductosAlCarro(EjemploGlobalSteps.java:46)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-</system-err></testcase></testsuite>

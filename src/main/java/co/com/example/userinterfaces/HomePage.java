@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 
-@DefaultUrl("https://es.aliexpress.com")
+@DefaultUrl("page:webdriver.base.url")
 public class HomePage extends PageObject {
 
     public static final Target INPUT_BUSCAR_ARTICULO = Target.the("Input donde se realizar la búsqueda").located(By.id("search-key"));

@@ -19,18 +19,16 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
 import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
+import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 public class EjemploGlobalSteps {
 
-    @Managed(driver = "chrome")
-    private WebDriver navegador;
     private HomePage homePage = new HomePage();
 
     @Dado("^que un nuevo cliente (.*) accede hasta la web de compras$")
     public void queUnNuevoClienteAccedeHastaLaWebDeCompras(String nombreActor) {
-          theActorCalled(nombreActor).can(BrowseTheWeb.with(navegador));
-          theActorInTheSpotlight().wasAbleTo(Open.browserOn(homePage));
-          navegador.manage().window().maximize();
+          theActorCalled(nombreActor).wasAbleTo(Open.browserOn(homePage));
+          getDriver().manage().window().maximize();
     }
 
     @Cuando("^el agrega (.*) unidades de (.*) de (.*) al carro$")
